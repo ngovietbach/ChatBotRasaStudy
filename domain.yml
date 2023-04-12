@@ -1,0 +1,84 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - cheer_up
+  - thankyou
+  - ask_ability
+  - praise
+  - dercy
+  - greet_name
+  - get_name
+entities: 
+  - name
+  - id
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: name
+  id:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: id
+responses:
+  utter_greet:
+  - text: |
+      "Hey! How are you?"
+  - text: |
+      "Hello !"
+  - text: "Xin chào bạn"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Bach."
+  utter_unclear:
+  - text: "I don't understand"
+  
+  utter_ability:
+  - text : "Tôi có thể đưa ra lịch học cho các môn"
+  
+  utter_praise:
+  - text : "Cảm ơn bạn rất nhiều "
+  
+  utter_thankyou:
+  - text : "Đây là việc nên làm ạ"
+  - text : "Không có gì ạ"
+
+  utter_dercy:
+  - text : "Rất xin lỗi vì không đáp ứng được yêu cầu của bạn"
+
+
+  utter_ask_name:
+  - text : "Tên của bạn là gì ? "
+
+  utter_greet_name:
+  - text : "Xin chào {name}"
+actions:
+  - action_greet_name
+  - action_get_name
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

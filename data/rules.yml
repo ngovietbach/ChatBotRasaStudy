@@ -1,0 +1,21 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- rule: cheer_up with the user
+  steps:
+  - intent: cheer_up
+  - action: utter_cheer_up
+- rule: show ability
+  steps:
+  - intent: ask_ability
+  - action: utter_ability

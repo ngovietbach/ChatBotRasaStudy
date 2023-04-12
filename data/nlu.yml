@@ -1,0 +1,201 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào 
+    - chào bạn
+    - có ai giúp mình không 
+    - anh ơi 
+    - chị ơi 
+    - こんにちは。
+    - chào em
+    - hello em
+    - hi em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+    - chào bạn nha
+    - chào bot
+    - hello
+    - xin chào 
+    - hôm nay bạn thế nào 
+    - hey
+    - chào bạn
+    - alo alo
+    - hú
+    - merci
+
+- intent: greet_name
+  examples: |
+    - anh là [bách](name)
+    - chị là [thảo](name)
+    - xin chào anh là [bách](name)
+    - anh là [lâm](name)
+    - anh là [tùng](name)
+    - anh là [quang](name)
+    - anh là [hà](name)
+    - anh là [hảo](name)
+    - anh là [dũng](name)
+    - anh là [hùng](name)
+    - anh là [đăng](name)
+    - anh là [ly](name)
+    - anh là [linh](name)
+    - anh là [phương](name)
+    - anh là [trang](name)
+    - anh là [ngọc](name)
+    - anh là [nam](name)
+    - anh là [long](name)
+
+- intent: get_name
+  examples: |
+    - môn học có mã là [123456](id)
+    - Who is subject [123456](id)?
+    - Get me the name of the subject with id [123456](id)
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt 
+    - chào tạm biệt 
+    - さようなら
+    - tạm biệt bot nhá
+    - tạm biệt bạn nha
+    - bye
+    - gặp sau nha
+    - hẹn lần khác
+    - lúc khác nói tiếp sau
+    - thôi nha
+    - gặp sau
+    - đi đây
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: cheer_up
+  examples: |
+    - Hôm nay tôi rất buon
+- intent: ask_ability
+  examples: |
+    - em có thể làm những gì nhỉ
+    - em có chức năng gì?
+    - em giúp gì được anh không?
+    - bạn có thể  làm gì?
+    - em có thể giúp gì cho anh?
+    - bạn biết hát không ?
+    - bạn biết xem lịch học ah?
+    - em biết làm gì?
+    - em hỗ trợ anh như thế nào?
+    - cho anh xem các chức năng của em
+- intent: thankyou
+  examples: |
+    - cảm ơn em nhá
+    - thanks em nha
+    - cảm ơn nha
+    - good job
+    - cảm ơn bạn nha
+    - cảm ơn nhiều
+    - thank you
+    - cảm ơn bot nha
+    - thanks bot
+    - cảm ơn
+    - thank you so much
+    - great! Thanks
+- intent: praise
+  examples: |
+    - bot giỏi quá
+    - great
+    - awsome
+    - bot làm tốt lắm
+    - ui giỏi thế
+    - bot thông minh
+    - đẹp trai đấy
+- intent: dercy
+  examples: |
+    - quá tệ
+    - ngu ngốc
+    - chả biết gì cả
+    - ngu thật
+    - dở ghê
+    - có thế mà cũng không biết
+    - kém cỏi
+    - sai rồi, chán ghê
